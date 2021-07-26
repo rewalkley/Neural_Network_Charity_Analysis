@@ -17,7 +17,7 @@ Results can be broken down into the following
 * In the original Machine Learning Model, 80 neurons were used in the first layer, followed by 30 in the second:
 ![image](https://user-images.githubusercontent.com/80076110/126927457-b03f1bcb-6d3d-45fc-baeb-cf3c15609b15.png)
 * Target model performance came close in the original model
-* ![image](https://user-images.githubusercontent.com/80076110/126927501-f5710107-b794-42c3-be9e-19a73a74d601.png)
+![image](https://user-images.githubusercontent.com/80076110/126927501-f5710107-b794-42c3-be9e-19a73a74d601.png)
 * However, in the optimization models, the accuracy decreased:
 * Attempt 1
 ![image](https://user-images.githubusercontent.com/80076110/126927636-d97c4f26-a3fc-4485-82f4-792c8c8b7973.png)
@@ -26,4 +26,9 @@ Results can be broken down into the following
 * Attempt 3
 ![image](https://user-images.githubusercontent.com/80076110/126927653-651f37a5-145a-4cab-ae6e-2bf23c45af1a.png)
 
+For Optimiztion, first a feature was removed, the AFFILIATION column. this resulted in a decreased accuracy from the original model. Next, a third hidden layer was added, which also resulted in a decrease in accuracy. Lastly, the output layer was switched from sigmoid to tanh, which again, did not increase accuracy from the original model.
 
+## Summary
+The Optimization models had the reverse effect on ocerall accuracy in the model. The original model had close to the desired outcome of 75% (72%), whereas the optimization models had accuracy scores in the 60% range.
+
+I believe parsing the data down further by removing columns with little to no impact may help our accuracy when re-running the models.
